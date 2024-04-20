@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : *name
-  avatar           : "/assets/images/Runfeng_portrait.jpg"
+  # avatar           : ""
   bio              : "I am a senior student. I am now I'm currently working on my graduation thesis project."
   location         : "Brisbane, Australia"
   links:
