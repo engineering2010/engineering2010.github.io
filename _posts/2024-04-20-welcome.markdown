@@ -6,7 +6,7 @@ tags:
   - ELEC4630
 ---
 <div style="margin: 10px 200px;">
-  <p><strong><h2>Here are some tips for blogging</h2></strong></p>
+  <p><strong><h1 style="text-align: center; color: blue;">Here are some tips for blogging</h1></strong></p>
   <p><strong>Quick Start</strong></p>
   <p>One way to improve your learning is to blog about what you have learned and how you have solved problems. It is also an excellent way to explore git and Github. Create your own blog on GitHub to document your progress and what you have learned about AI from the fastai course. Use Github Pages to create your free blog. Here are the instructions to <a href="https://docs.github.com/en/pages">quick start</a>.</p>
   <p><strong>About Jekyll</strong></p>
