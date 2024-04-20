@@ -19,7 +19,7 @@ locale                   : "en-AU"
 title                    : "Runfeng Shi's blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Runfeng Shi"
+name                     : &name "Runfeng Shi"
 description              : "A not bad website for recording my learning experience"
 url                      : "https://engineering2010.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
