@@ -6,11 +6,11 @@ tags:
   - ELEC4630
 ---
 <div style="margin: 10px 200px;">
-  <p>Here are some tips for blogging</p>
-  <p>Quick Start</p>
+  <p><strong>Here are some tips for blogging</strong></p>
+  <p><strong>Quick Start</strong></p>
   <p>One way to improve your learning is to blog about what you have learned and how you have solved problems. It is also an excellent way to explore git and Github. Create your own blog on GitHub to document your progress and what you have learned about AI from the fastai course. Use Github Pages to create your free blog. Here are the instructions to <a href="https://docs.github.com/en/pages">quick start</a>.</p>
-  <p>About Jekyll</p>
+  <p><strong>About Jekyll</strong></p>
   <p>Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts.</p>
   <p>It is recommended to use Bundler to install and run Jekyll. Bundler is a Ruby dependency management tool that can manage dependencies of Ruby gems, reduce potential errors during Jekyll builds, and prevent environment-related bugs.</p>
   <p>To use Bundler, <a href="https://rubyinstaller.org/">Ruby</a> must first be installed (I installed ruby by a self-contained Windows-based installer ). Any modern distribution of Ruby comes with Bundler preinstalled by default.. To get start with bundler, see <a href="https://bundler.io/">Bundler</a>.</p>
-</div> 
+</div>
