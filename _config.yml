@@ -105,14 +105,13 @@ analytics:
 # Site Author
 author:
   name             : "Runfeng Shi"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/Runfeng_portrait.jpg"
   bio              : "I am an senior student. I am now I'm currently working on my graduation thesis project."
-  location         : "Somewhere"
-  email            : "srf14691781799@gmail.com"
+  location         : "Brisbane, Australia"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "srf1469178799@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -137,7 +136,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://github.com/engineering2010"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
