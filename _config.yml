@@ -103,8 +103,8 @@ analytics:
 
 
 # Site Author
-author:
-  name             : *name
+author: Runfeng Shi
+  name             : Runfeng Shi
   # avatar           : ""
   bio              : "I am a senior student. I am now I'm currently working on my graduation thesis project."
   location         : "Brisbane, Australia"
