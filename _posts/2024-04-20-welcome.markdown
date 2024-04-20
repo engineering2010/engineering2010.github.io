@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "Here are some tips for blogging"
+date:   2024-04-20
+tags: 
+  - ELEC4630
+---
+
+One way to improve your learning is to blog about what you have learned and how you have solved problems. It is also an excellent way to explore git and Github.  Create your own blog on GitHub to document your progress and what you have learned about AI from the fastai course. Use Github Pages to create your free blog. Here are the instructions: [links] (https://docs.github.com/en/pages)
