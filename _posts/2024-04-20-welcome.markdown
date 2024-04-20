@@ -2,6 +2,9 @@
 layout: post
 title:  "Here are some tips for blogging"
 date:   2024-04-20
+header:
+  image: /assets/images/unsplash-image-4.jpg
+  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
 tags: 
   - ELEC4630
 ---
