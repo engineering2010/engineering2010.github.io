@@ -4,6 +4,17 @@ layout: archive
 
 {{ content }}
 
+<div class="site-author">
+  <h2>{{ site.author.name }}</h2>
+  <p>{{ site.author.bio }}</p>
+  <p>Location: {{ site.author.location }}</p>
+  <ul class="author-links">
+    {% for link in site.author.links %}
+      <li><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.label }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
 {% if paginator %}
