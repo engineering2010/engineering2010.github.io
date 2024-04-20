@@ -1,22 +1,36 @@
 ---
-layout: archive
+layout: home
 ---
 
-{{ content }}
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
-
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% for post in posts %}
-    {% include archive-single.html type=entries_layout %}
-  {% endfor %}
+<div class="row">
+  <div class="col-md-4">
+    <!-- Site author section -->
+    <div class="site-author">
+      <h2>{{ site.author.name }}</h2>
+      <p>{{ site.author.bio }}</p>
+      <p>Location: {{ site.author.location }}</p>
+      <ul class="author-links">
+        {% for link in site.author.links %}
+          <li><a href="{{ link.url }}"><i class="{{ link.icon }}"></i>{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-8">
+    <!-- Content section -->
+    {{ content }}
+    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+      {% for post in posts %}
+        {% include archive-single.html type=entries_layout %}
+      {% endfor %}
+    </div>
+    {% include paginator.html %}
+  </div>
 </div>
-
-{% include paginator.html %}
