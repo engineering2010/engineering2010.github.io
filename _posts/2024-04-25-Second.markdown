@@ -15,21 +15,20 @@ The steps for using t-SNE (t-Distributed Stochastic Neighbor Embedding) to reduc
 2. t-SNE dimensionality reduction
 3. Visualization
 
+This code extracts features and labels from the validation dataset. By iterating over `dls.valid`, it uses the model `learn.model` to predict each input `x`, generating a list of features (`features`), and retrieves the corresponding label `y`, creating a list of labels (`labels`). These features and labels can be used for further analysis, training, or data visualization.
 ```console
-# Extract features and labels from dataset
-features = [learn.model(x) for x, _ in dls.valid]    # dls.valid includes a large dataset
+features = [learn.model(x) for x, _ in dls.valid]
 labels = [y for _, y in dls.valid]
 ```
 
 The following code primarily performs t-SNE (t-Distributed Stochastic Neighbor Embedding) dimensionality reduction and converts high-dimensional data into two dimensions.
 ```console
-# t-SNE dimensionality reduction
 tsne = TSNE(n_components=2, random_state=42)
 features_tsne = tsne.fit_transform(features)
 ```
 
+The following code uses t-SNE to reduce high-dimensional data to two dimensions and creates a 2D scatter plot to visualize the distribution of different categories.
 ```console
-# Visualization
 plt.figure(figsize=(10, 8))
 for i, className in enumerate(dls.vocab):    # dls.vocab contains all the classes and the corresponding index for each class.
     index = (labels == i)
