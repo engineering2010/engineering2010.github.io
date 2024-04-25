@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: splash
 title: About Me
 permalink: /about me/
 ---
@@ -13,4 +13,4 @@ I blog to document the experiences I gain during my course studies. The courses 
   * REIT4841
   * ELEC4630
 
-![Image of Runfeng Shi](assets/images/Runfeng_portrait.jpg)
+![Image of Runfeng Shi](assets/images/Runfeng_portrait-1.jpg)
