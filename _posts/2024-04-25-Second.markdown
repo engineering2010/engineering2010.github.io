@@ -21,6 +21,7 @@ features = [learn.model(x) for x, _ in dls.valid]    # dls.valid includes a larg
 labels = [y for _, y in dls.valid]
 ```
 
+The following code primarily performs t-SNE (t-Distributed Stochastic Neighbor Embedding) dimensionality reduction and converts high-dimensional data into two dimensions.
 ```console
 # t-SNE dimensionality reduction
 tsne = TSNE(n_components=2, random_state=42)
