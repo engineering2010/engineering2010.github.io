@@ -1,0 +1,40 @@
+---
+layout: splash
+title:  "Use t-SNE matrice to analyze dataset"
+header:
+  image: /assets/images/unsplash-image-2.jpg
+date:   2024-04-25
+tags: 
+  - ELEC4630
+---
+# Use t-SNE matrice
+
+The steps for using t-SNE (t-Distributed Stochastic Neighbor Embedding) to reduce high-dimensional data and visualize it are as follows:
+
+1. Extract features and labels from dataset:
+
+```console
+features = [learn.model(x) for x, _ in dls.valid] # dls.valid includes a lage dataset
+labels = [y for _, y in dls.valid]
+```
+
+2. t-SNE dimensionality reduction:
+
+```console
+tsne = TSNE(n_components=2, random_state=42)
+features_tsne = tsne.fit_transform(features)
+```
+
+3. Visualization:
+
+```console
+plt.figure(figsize=(10, 8))
+for i, className in enumerate(dls.vocab):
+    index = (labels == i)
+    plt.scatter(features_tsne[index, 0], features_tsne[index, 1], label=className, alpha=0.7)
+plt.title('t-SNE Plot of CIFAR-10 Classes')
+plt.legend()
+plt.show()
+```
+
+![Alt text](/assets/images/t-SNE-matrix.png)
