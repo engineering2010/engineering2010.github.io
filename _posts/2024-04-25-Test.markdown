@@ -7,5 +7,5 @@ date:   2024-04-25
 tags: 
   - ELEC4630
 ---
-Hello, these is runfeng shi speaking.
+Hello, these is runfeng shi speaking. You can tpye `q`.
 
