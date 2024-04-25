@@ -7,7 +7,7 @@ date:   2024-04-25
 tags: 
   - ELEC4630
 ---
-# Use t-SNE matrice
+# Use t-SNE matrix
 
 The steps for using t-SNE (t-Distributed Stochastic Neighbor Embedding) to reduce high-dimensional data and visualize it are as follows:
 
