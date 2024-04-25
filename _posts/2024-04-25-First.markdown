@@ -1,0 +1,18 @@
+---
+layout: splash
+title:  "Change batch size for GPU"
+header:
+  image: /assets/images/unsplash-image-1.jpg
+date:   2024-04-25
+tags: 
+  - ELEC4630
+---
+<div style="margin: 10px 200px;">
+  <p><strong><h2>Where to set batch size</h2></strong></p>
+  <p>To improve data processing speed, you can add the **bs** variable to `dataloaders()`. `bs` stands for batch size, and the default batch size in `dataloaders()` is 64. The values you can set for `bs` are 16, 32, 64, 128, or 256.</p>
+</div>
+
+<p align="center">
+  <img src="/assets/images/change-batch-size" alt="Image of Batch size changing">
+</p>
+
