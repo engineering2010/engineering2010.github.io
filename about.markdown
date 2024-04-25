@@ -12,3 +12,5 @@ I blog to document the experiences I gain during my course studies. The courses 
   * CSSE3010
   * REIT4841
   * ELEC4630
+
+![Image of Runfeng Shi](assets/images/Runfeng_portrait.jpg)
