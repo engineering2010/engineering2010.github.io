@@ -17,7 +17,7 @@ The steps for using t-SNE (t-Distributed Stochastic Neighbor Embedding) to reduc
 
 ```console
 # Extract features and labels from dataset
-features = [learn.model(x) for x, _ in dls.valid] # dls.valid includes a lage dataset
+features = [learn.model(x) for x, _ in dls.valid]    # dls.valid includes a large dataset
 labels = [y for _, y in dls.valid]
 ```
 
@@ -30,7 +30,7 @@ features_tsne = tsne.fit_transform(features)
 ```console
 # Visualization
 plt.figure(figsize=(10, 8))
-for i, className in enumerate(dls.vocab):
+for i, className in enumerate(dls.vocab):    # dls.vocab contains all the classes and the corresponding index for each class.
     index = (labels == i)
     plt.scatter(features_tsne[index, 0], features_tsne[index, 1], label=className, alpha=0.7)
 plt.title('t-SNE Plot of CIFAR-10 Classes')
