@@ -11,21 +11,24 @@ tags:
 
 The steps for using t-SNE (t-Distributed Stochastic Neighbor Embedding) to reduce high-dimensional data and visualize it are as follows:
 
-1. Extract features and labels from dataset:
+1. Extract features and labels from dataset
+2. t-SNE dimensionality reduction
+3. Visualization
 
 ```console
+# Extract features and labels from dataset
 features = [learn.model(x) for x, _ in dls.valid] # dls.valid includes a lage dataset
 labels = [y for _, y in dls.valid]
 ```
-2. t-SNE dimensionality reduction:
 
 ```console
+# t-SNE dimensionality reduction
 tsne = TSNE(n_components=2, random_state=42)
 features_tsne = tsne.fit_transform(features)
 ```
-3. Visualization:
 
 ```console
+# Visualization
 plt.figure(figsize=(10, 8))
 for i, className in enumerate(dls.vocab):
     index = (labels == i)
