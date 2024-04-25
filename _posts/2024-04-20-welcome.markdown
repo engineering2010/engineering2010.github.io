@@ -13,6 +13,7 @@ tags:
 One way to improve your learning is to blog about what you have learned and how you have solved problems. It is also an excellent way to explore git and Github. Create your own blog on GitHub to document your progress and what you have learned about AI from the fastai course. Use Github Pages to create your free blog. Here are the instructions to [quick start](https://docs.github.com/en/pages)
 
 # About Jekyll
+
 Jekyll is a static site generator with built-in support for GitHub Pages and a simplified build process. Jekyll takes Markdown and HTML files and creates a complete static website based on your choice of layouts.
 
 It is recommended to use Bundler to install and run Jekyll. Bundler is a Ruby dependency management tool that can manage dependencies of Ruby gems, reduce potential errors during Jekyll builds, and prevent environment-related bugs.

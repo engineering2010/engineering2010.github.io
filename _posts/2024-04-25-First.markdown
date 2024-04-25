@@ -8,6 +8,7 @@ tags:
   - ELEC4630
 ---
 # Where to set batch size
+
 To improve data processing speed, you can add the `bs` variable to `dataloaders()`. `bs` stands for batch size, and the default batch size in `dataloaders()` is 64. The values you can set for `bs` are 16, 32, 64, 128, or 256.
 
 ![Alt text](/assets/images/change-batch-size.png)
