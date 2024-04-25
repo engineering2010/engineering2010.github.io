@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: splash
 title:  "Here are some tips for blogging"
 header:
   image: /assets/images/unsplash-image-1.jpg
